@@ -7,8 +7,8 @@ export default function Sender() {
   
   // Construct the URL the phone needs to visit
   // IMPORTANT: Replace localhost with your computer's Local IP for real testing!
-  const shareUrl = `${window.location.protocol}//${window.location.hostname}:5173/receive/${roomId}`;
-
+  const shareUrl = `${window.location.origin}/receive/${roomId}`;
+  
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     e.stopPropagation();
